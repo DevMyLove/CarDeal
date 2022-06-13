@@ -1,0 +1,72 @@
+.pre-scrim {
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsla(0, 0%, 7%, 0.36);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: all linear 0.25s;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.create-brand {
+  opacity: 0;
+  min-width: 400px;
+  height: 280px;
+  padding: 30px;
+  position: fixed;
+  top: 33.33%;
+  left: 33.33%;
+  background-color: #fff;
+  border-radius: 10px;
+  visibility: hidden;
+  z-index: 5;
+  transition: all linear 0.25s;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .close-create-brand {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 25px;
+  }
+  h3 {
+    margin-top: 10px;
+  }
+  .box-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .wrap-input {
+    input {
+      width: 100%;
+    }
+  }
+  .wrap-btn {
+    display: flex;
+    justify-content: end;
+    margin: 20px 0;
+
+    .btn {
+      margin-left: 20px;
+    }
+  }
+  .res-message {
+    color: red;
+    text-align: center;
+  }
+}

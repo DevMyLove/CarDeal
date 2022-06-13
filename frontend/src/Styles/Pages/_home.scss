@@ -1,0 +1,323 @@
+.pre-wrap-home {
+  display: flex;
+  justify-content: center;
+
+  .wrap-home {
+    width: 1264px;
+
+    .features__sect,
+    .destination__sect {
+      margin: 20px 0px;
+    }
+    .title-car {
+      margin: 25px 32px;
+    }
+    .m-container {
+      position: relative;
+      width: 100%;
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        background-color: #fafafa;
+        position: absolute;
+        top: calc(50% - 16px);
+        width: 32px;
+        height: 32px;
+        border-radius: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+      .swiper-container {
+        width: calc(100%-64px);
+        overflow: hidden;
+        margin: 0px 32px;
+        position: relative;
+
+        .swiper-wrapper {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          box-sizing: content-box;
+
+          .swiper-slide {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            position: relative;
+
+            .fix-img {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              overflow: hidden;
+              padding-bottom: 67%;
+              border-radius: 5px;
+
+              img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .destination__sect {
+      .fix-img {
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 5;
+          width: 100%;
+          height: 50%;
+          border-radius: 0 0 10px 10px;
+          background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(13.85%, #141414),
+            to(hsla(0, 0%, 8%, 0))
+          );
+          background: -webkit-linear-gradient(
+            bottom,
+            #141414 13.85%,
+            hsla(0, 0%, 8%, 0)
+          );
+          background: -o-linear-gradient(
+            bottom,
+            #141414 13.85%,
+            hsla(0, 0%, 8%, 0) 100%
+          );
+          background: linear-gradient(0deg, #141414 13.85%, hsla(0, 0%, 8%, 0));
+        }
+        h3 {
+          width: 100%;
+          bottom: 0;
+          z-index: 5;
+          color: black;
+          position: absolute;
+          color: #fafafa;
+          font-size: 1rem;
+          font-weight: 700;
+          padding: 15px;
+          span {
+            display: block;
+            font-weight: 500;
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+
+    .tutorial__sect {
+      padding: 40px 0px;
+
+      .link-none {
+        text-decoration: none;
+      }
+      .link-tutorial {
+        color: $green;
+
+        .step-box__wrap {
+          display: flex;
+          justify-content: space-between;
+
+          .step-box__item {
+            text-align: center;
+            .fix-img {
+              img {
+                height: 200px;
+              }
+            }
+            .step-detail {
+              margin-top: 15px;
+              h3 {
+                font-weight: 600;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+      .s-all {
+        margin-top: 20px;
+        text-align: end;
+      }
+      a {
+        margin: 0px 10px;
+        color: $black;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+      }
+    }
+
+    .owner__sect {
+      background-image: url("https://st.quantrimang.com/photos/image/2019/10/31/hinh-nen-o-to-dep-8.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 500px;
+      border-radius: 10px;
+      margin: 50px 32px;
+
+      .ex-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+
+        .inner__wrap {
+          margin-left: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 400px;
+          color: #fafafa;
+          position: relative;
+
+          &:before {
+            content: "";
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            background-color: rgba(20, 20, 20, 0.15);
+            z-index: 1;
+            filter: blur(20px);
+          }
+          h2,
+          p,
+          .has-2btn {
+            z-index: 2;
+          }
+          h2 {
+            font-size: 40px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+
+    .car-area__sect {
+      margin: 50px 0px;
+      width: 100%;
+
+      .car-area-img {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+
+        .link-car {
+          padding-bottom: 50px;
+          
+          .button-booking-car {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+          }
+        }
+
+        a {
+          height: 100%;
+          text-decoration: none;
+          color: #141414;
+          margin-bottom: 20px;
+
+          &:hover {
+            .fix-img {
+              &::before {
+                z-index: 5;
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .img-car {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: relative;
+
+          .fix-img {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &::before {
+              position: absolute;
+              content: "";
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.15);
+              opacity: 0;
+              visibility: hidden;
+              z-index: 1;
+              -webkit-transition: all 0.3s linear;
+              -o-transition: all 0.3s linear;
+              transition: all 0.3s linear;
+            }
+
+            img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .desc-car {
+          padding: 10px;
+          width: 100%;
+          height: 100%;
+
+          h2,
+          .group-label,
+          .location {
+            width: 100%;
+            height: 100%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            -ms-text-overflow: ellipsis;
+            overflow: hidden;
+          }
+
+          h2 {
+            font-size: 1.5rem;
+          }
+          .group-label {
+            margin-bottom: 10px;
+            span {
+              font-size: 1rem;
+              color: #6e6e6e;
+              background: #e8eaef;
+              padding: 0.3rem 0.75rem;
+              margin-right: 0.5rem;
+              font-weight: 500;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

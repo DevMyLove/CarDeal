@@ -1,0 +1,151 @@
+.booking-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fb;
+  display: flex;
+
+  .content-detail {
+    width: 750px;
+
+    .info-car {
+      width: 100%;
+      padding: 20px 50px;
+      margin: 20px 0;
+
+      &.slide-box {
+        .m-container {
+          width: 100%;
+          position: relative;
+
+          .swiper-button-next,
+          .swiper-button-prev {
+            top: calc(50% - 16px);
+            position: absolute;
+            z-index: 5;
+            background-color: rgba(255, 111, 135, 0.15);
+            border-radius: 5px;
+
+            &:hover {
+              background-color: rgba(255, 111, 135, 0.55);
+            }
+            i {
+              font-size: 32px;
+              color: #fff;
+            }
+          }
+          .swiper-button-prev {
+            left: 0;
+          }
+          .swiper-button-next {
+            right: 0;
+          }
+          .swiper-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+
+            .swiper-wrapper {
+              width: 100%;
+              height: 100%;
+              display: flex;
+
+              .swiper-slide {
+                width: 100%;
+                height: 300px;
+                flex-shrink: 0;
+                position: relative;
+
+                .fix-img {
+                  width: 100%;
+                  height: 100%;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: relative;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .rent-box {
+    padding: 20px;
+    display: block;
+    border-left: 1px solid grey;
+    flex: 1;
+
+    .price-car {
+      margin: 10px 0px;
+      text-align: center;
+
+      h3 {
+        margin: 0 auto;
+        font-weight: 700;
+        color: rgb(22, 133, 22);
+      }
+    }
+
+    .choose-date {
+      margin: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      label {
+        width: 100%;
+        margin: 5px 0;
+      }
+      .wrap-input.date {
+        width: 60%;
+      }
+      .wrap-input.time {
+        width: 30%;
+      }
+      .wrap-input {
+        margin: 0;
+
+        input,
+        select {
+          width: 100%;
+          height: 45px;
+          border-radius: 5px;
+          border: 1px solid;
+
+          &:focus {
+            outline-style: solid;
+            outline: 2px solid #c8d9fc;
+            border: 1px solid #c8d9fc;
+          }
+        }
+      }
+    }
+    .location {
+      margin: 20px 0px;
+      p {
+        font-weight: bold;
+      }
+    }
+    .calculation-price {
+      margin: 20px 0px;
+      h3 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .wrap-btn {
+      width: 100%;
+      margin: 20px 0;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
